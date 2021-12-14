@@ -81,7 +81,7 @@ function emptySqauers() {
 }
 
 function checkTie() {
-    if(emptySqauers().length == 0){
+    if(emptySqauers().length == 0 && checkWin(board, player) == NULL){
         for ( var i=0 ; i< cells.length; i++){
             cells[i].style.backgroundColor = "green";
             cells[i].removeEventListener('click', turnClick, false);
